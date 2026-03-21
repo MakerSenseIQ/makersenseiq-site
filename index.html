@@ -6,66 +6,99 @@
 
   <title>MakerSense IQ</title>
 
-  <meta name="description" content="MakerSense IQ helps makers, fabricators, and small shops calculate the true cost of what they build. Estimate jobs, analyze margins, and stop guessing what to charge." />
+  <meta name="description" content="MakerSense IQ helps makers, fabricators, and small shops cost and quote 3D printing, laser, CNC, and fabrication work with more confidence. Estimate real job cost, analyze margins, and stop guessing what to charge." />
   <meta name="keywords" content="maker pricing software, fabrication cost calculator, 3D printing cost estimator, laser cutting pricing, CNC job costing, quoting software" />
   <meta property="og:title" content="MakerSense IQ" />
-  <meta property="og:description" content="Pricing your work shouldn’t be guesswork. MakerSense IQ helps makers calculate real job costs and price with confidence." />
+  <meta property="og:description" content="Pricing your work shouldn’t be guesswork. Cost and quote 3D printing, laser, CNC, and fabrication work with more confidence." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://makersenseiq.com" />
 
   <style>
+    :root {
+      --bg-top: #0f172a;
+      --bg-bottom: #020617;
+      --panel: #0f172a;
+      --panel-border: #1e293b;
+      --text-main: #e2e8f0;
+      --text-strong: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-body: #cbd5e1;
+      --text-soft: #64748b;
+      --cta-bg: #e2e8f0;
+      --cta-text: #0f172a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      background: linear-gradient(180deg, #0f172a, #020617);
-      color: #e2e8f0;
+      background: linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+      color: var(--text-main);
     }
 
     .container {
-      max-width: 900px;
+      max-width: 980px;
       margin: auto;
-      padding: 80px 30px;
+      padding: 80px 24px;
       text-align: center;
     }
 
     h1 {
-      font-size: 56px;
-      margin-bottom: 10px;
+      font-size: clamp(42px, 8vw, 56px);
+      margin: 0 0 10px;
       letter-spacing: 1px;
     }
 
     .tagline {
-      font-size: 28px;
-      color: #f8fafc;
-      margin-bottom: 18px;
-      font-weight: 600;
+      font-size: clamp(24px, 4.5vw, 30px);
+      color: var(--text-strong);
+      margin-bottom: 16px;
+      font-weight: 700;
+      line-height: 1.2;
     }
 
     .subtag {
-      font-size: 18px;
-      color: #94a3b8;
+      font-size: 19px;
+      color: var(--text-muted);
       line-height: 1.6;
-      margin-bottom: 40px;
+      margin: 0 auto 34px;
+      max-width: 760px;
     }
 
     .description {
       font-size: 18px;
-      line-height: 1.7;
-      margin-bottom: 40px;
-      color: #cbd5e1;
-      max-width: 760px;
-      margin-left: auto;
-      margin-right: auto;
+      line-height: 1.75;
+      margin: 0 auto 22px;
+      color: var(--text-body);
+      max-width: 780px;
+    }
+
+    .trust-strip {
+      max-width: 780px;
+      margin: 0 auto 34px;
+      padding: 14px 18px;
+      border: 1px solid var(--panel-border);
+      border-radius: 12px;
+      background: rgba(15, 23, 42, 0.55);
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .cta-row {
+      margin-bottom: 16px;
     }
 
     .cta {
       display: inline-block;
-      margin-top: 10px;
-      margin-bottom: 18px;
+      margin-top: 8px;
       padding: 14px 26px;
       border-radius: 10px;
-      background: #e2e8f0;
-      color: #0f172a;
+      background: var(--cta-bg);
+      color: var(--cta-text);
       text-decoration: none;
       font-weight: 700;
       transition: transform 0.15s ease, opacity 0.15s ease;
@@ -78,41 +111,50 @@
 
     .note {
       font-size: 15px;
-      color: #94a3b8;
-      margin-bottom: 35px;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+
+    .audience {
+      margin: 0 auto 18px;
+      max-width: 780px;
+      color: var(--text-body);
+      font-size: 16px;
+      line-height: 1.6;
     }
 
     .features {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
       margin-top: 20px;
     }
 
     .feature {
-      background: #0f172a;
-      border: 1px solid #1e293b;
-      padding: 25px;
-      border-radius: 10px;
+      background: var(--panel);
+      border: 1px solid var(--panel-border);
+      padding: 26px;
+      border-radius: 12px;
       text-align: left;
     }
 
     .feature h3 {
-      margin-top: 0;
-      margin-bottom: 10px;
-      color: #f8fafc;
+      margin: 0 0 10px;
+      color: var(--text-strong);
+      font-size: 20px;
     }
 
     .feature p {
       margin: 0;
-      color: #cbd5e1;
-      line-height: 1.5;
+      color: var(--text-body);
+      line-height: 1.6;
     }
 
     .footer {
-      margin-top: 60px;
+      margin-top: 64px;
       font-size: 14px;
-      color: #64748b;
+      color: var(--text-soft);
     }
   </style>
 </head>
@@ -126,38 +168,47 @@
     </div>
 
     <div class="subtag">
-      Pricing intelligence for modern makers, fabricators, and small shops.
+      Cost and quote 3D printing, laser, CNC, and fabrication work with more confidence.
     </div>
 
     <div class="description">
-      Many makers and small fabrication shops struggle to price their work accurately.
-      Material costs are only part of the picture—machine time, setup, overhead, and margin all matter.
-      <br><br>
-      MakerSense IQ helps bring those factors together so you can estimate jobs and quote work with more confidence.
+      Many small shops know their material cost, but struggle to consistently account for machine time,
+      setup, labor, overhead, and margin. MakerSense IQ helps bring those factors together so you can
+      estimate jobs more clearly, quote work with discipline, and stop underpricing the work you do.
     </div>
 
-    <a class="cta" href="https://forms.gle/Pt2soYcXs1XwGksWA" target="_blank" rel="noopener noreferrer">
-      Request Beta Access
-    </a>
+    <div class="trust-strip">
+      Built around real-world shop workflows for makers, side hustles, and small fabrication businesses.
+    </div>
+
+    <div class="cta-row">
+      <a class="cta" href="https://forms.gle/Pt2soYcXs1XwGksWA" target="_blank" rel="noopener noreferrer">
+        Request Beta Access
+      </a>
+    </div>
 
     <div class="note">
-      Looking for early testers from the maker and fabrication community.
+      Join the beta list and help shape a pricing tool built for practical quoting workflows.
+    </div>
+
+    <div class="audience">
+      Ideal for solo makers, small shops, and custom fabrication businesses looking for a better way to price work.
     </div>
 
     <div class="features">
       <div class="feature">
-        <h3>Accurate Costing</h3>
-        <p>Estimate material, machine, and labor costs with more structure and less guesswork.</p>
+        <h3>Capture Real Job Cost</h3>
+        <p>Bring material, machine, labor, setup, and overhead into a more structured costing process.</p>
       </div>
 
       <div class="feature">
-        <h3>Smarter Pricing</h3>
-        <p>Analyze margins and build quotes that better reflect the real cost of your work.</p>
+        <h3>Quote With Margin in Mind</h3>
+        <p>Build pricing that reflects the real effort behind the work instead of relying on rough guesses.</p>
       </div>
 
       <div class="feature">
-        <h3>Built for Makers</h3>
-        <p>Designed with 3D printing, laser cutting, CNC, and small fabrication workflows in mind.</p>
+        <h3>Built for Shop Workflows</h3>
+        <p>Designed with 3D printing, laser cutting, CNC, and small fabrication jobs in mind.</p>
       </div>
     </div>
 
