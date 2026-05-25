@@ -151,39 +151,11 @@
       opacity: 0.96;
     }
 
-    .status-panel {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 14px;
-      max-width: 920px;
-      margin: 0 auto;
-    }
-
-    .status-item,
     .feature {
       border: 1px solid var(--panel-border);
       border-radius: 12px;
       background: var(--panel);
       text-align: left;
-    }
-
-    .status-item {
-      padding: 18px;
-    }
-
-    .status-label {
-      margin: 0 0 6px;
-      color: var(--text-soft);
-      font-size: 0.82rem;
-      font-weight: 800;
-      text-transform: uppercase;
-    }
-
-    .status-value {
-      margin: 0;
-      color: var(--text-main);
-      line-height: 1.45;
-      overflow-wrap: anywhere;
     }
 
     .features {
@@ -236,7 +208,6 @@
         padding-top: 18px;
       }
 
-      .status-panel,
       .features {
         grid-template-columns: 1fr;
       }
@@ -275,21 +246,6 @@
         <a class="secondary-link" href="mailto:support@makersenseiq.com">
           Email Support
         </a>
-      </div>
-
-      <div class="status-panel" aria-label="MakerSense IQ beta status">
-        <div class="status-item">
-          <p class="status-label">Beta Status</p>
-          <p class="status-value">Public beta access is being opened carefully while workflows are refined.</p>
-        </div>
-        <div class="status-item">
-          <p class="status-label">Current Build</p>
-          <p class="status-value">Hosted app v0.1.0-beta.3</p>
-        </div>
-        <div class="status-item">
-          <p class="status-label">Best Next Step</p>
-          <p class="status-value">Join the beta list and share the shop workflows you need priced well.</p>
-        </div>
       </div>
     </section>
 
