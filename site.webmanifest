@@ -1,0 +1,21 @@
+{
+  "name": "MakerSense IQ",
+  "short_name": "MakerSense IQ",
+  "icons": [
+    {
+      "src": "/images/makersense-iq-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/makersense-iq-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#11131b",
+  "background_color": "#11131b",
+  "display": "standalone"
+}

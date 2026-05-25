@@ -1,10 +1,10 @@
-# MakerSense IQ — Website
+# MakerSense IQ Website
 
 This repository contains the public-facing website for MakerSense IQ.
 
 ## Overview
 
-MakerSense IQ is a fabrication pricing and quoting platform focused on 3D printing, CNC, and laser workflows.
+MakerSense IQ is a fabrication pricing and quoting platform focused on 3D printing, CNC, laser, and small shop workflows.
 
 ## Live Site
 
@@ -28,12 +28,10 @@ Workflow:
 
 ## Structure
 
-* index.html
-* pricing.html
-* styles.css
-* /images
+* `index.html`
+* `site.webmanifest`
+* `images/`
 
 ## Notes
 
-This repository is strictly for the website.
-The pricing engine and application logic are maintained separately.
+This repository is strictly for the website. The pricing engine and hosted application logic are maintained separately.
