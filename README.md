@@ -31,6 +31,17 @@ Workflow:
 * `index.html`
 * `site.webmanifest`
 * `images/`
+* `learn/` — static Learn index, shared styles, and reusable article template
+* `assets/learn/<article-slug>/` — images and other media owned by an article
+
+## Publishing an article
+
+The public site intentionally remains build-free. To add an article, copy
+`learn/article-template.html` to `learn/<article-slug>/index.html`, place its
+assets in `assets/learn/<article-slug>/`, complete the unique page metadata and
+`Article` JSON-LD, then add its card to `learn/index.html`. This keeps pages
+fast and directly deployable by Cloudflare Pages without coupling the site to a
+CMS before one is needed.
 
 ## Notes
 
