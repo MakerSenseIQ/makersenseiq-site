@@ -40,6 +40,13 @@ h1 { font-size:clamp(2.35rem,6vw,4.7rem); margin:.2em 0; }
 .hero-figure,.article-figure { margin:0 0 2.1em; }
 .hero-figure img,.article-figure img { display:block; width:100%; height:auto; border-radius:12px; border:1px solid rgba(255,255,255,.12); }
 .article-figure figcaption { color:var(--muted); margin-top:.65em; font-size:.92rem; }
+.article-figure a { display:block; cursor:zoom-in; }
+.lightbox { border:0; background:transparent; padding:0; max-width:min(96vw,1500px); max-height:96vh; }
+.lightbox::backdrop { background:rgba(0,0,0,.86); }
+.lightbox-content { position:relative; margin:0; }
+.lightbox img { display:block; max-width:94vw; max-height:88vh; width:auto; height:auto; border-radius:8px; }
+.lightbox-close { position:absolute; top:12px; right:12px; width:42px; height:42px; padding:0; border:1px solid rgba(255,255,255,.35); border-radius:999px; background:rgba(12,15,22,.82); color:#fff; font-size:1.7rem; line-height:1; cursor:pointer; }
+.lightbox-close:hover { background:#fff; color:#10131b; }
 .article-table-wrap { overflow-x:auto; margin:1.5em 0 1.2em; }
 table { width:100%; min-width:430px; border-collapse:collapse; background:rgba(255,255,255,.04); }
 th,td { border:1px solid var(--line); padding:.75em .9em; text-align:left; }
